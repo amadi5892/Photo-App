@@ -14,15 +14,21 @@ export default class Home extends React.Component {
 
         this.state = {
             images: pawImages,
-            selectedImages: pawImages[0],
+            selectedImage: pawImages[0],
             email: '',
             password: '',
             formCompleted: false
         }
     }
 
+    handleThumbClick(selectedImage) {
+            this.setState({
+            selectedImage
+        })
+    }
+
     render() {
-        const { images, selectedImages } = this.state
+        const { images, selectedImage } = this.state
         return (
             <div>
                 <h1>Home</h1>
@@ -30,12 +36,12 @@ export default class Home extends React.Component {
                     <div className="container">
                         <div className="display-img" >
                             <div>
-                                <img src={selectedImages} alt=""></img>
+                                <img src={selectedImage} alt=""></img>
                             </div>
                         </div>
                         <div className="selection">
                             {images.map((image, index) => (
-                                <div key={index} >
+                                <div key={index} onClick={this.handleThumbClick.bind(this, image)} >
                                     <img src={image} alt=""></img>
                                 </div>
                             ))}
