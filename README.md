@@ -1,3 +1,14 @@
+# React Photo App
+
+### Nav Bar 
+> Will help navigate between the Home, Profile, and Bookmarked Pages
+
+## Home Page
+> Create a display for images to circulate on the homepage. User should be able to select an image and have that image in a "main display" where they can book mark the image. 
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
