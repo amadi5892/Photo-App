@@ -9,10 +9,12 @@ const pawImages = [
 ]
 
 export default class Home extends React.Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
 
         this.state = {
+            images: pawImages,
+            selectedImages: pawImages[0],
             email: '',
             password: '',
             formCompleted: false
@@ -20,9 +22,26 @@ export default class Home extends React.Component {
     }
 
     render() {
+        const { images, selectedImages } = this.state
         return (
             <div>
                 <h1>Home</h1>
+                <div >
+                    <div className="container">
+                        <div className="display-img" >
+                            <div>
+                                <img src={selectedImages} alt=""></img>
+                            </div>
+                        </div>
+                        <div className="selection">
+                            {images.map((image, index) => (
+                                <div key={index} >
+                                    <img src={image} alt=""></img>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
