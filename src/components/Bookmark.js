@@ -23,7 +23,7 @@ class Bookmark extends React.Component {
         const {images} = this.state
         return (
             <div>
-                <h1>Bookmark</h1>
+                <h1 className="book">Saved Photos</h1>
                 <div className="selection">
                             {images.map((image, index) => (
                                 <div key={index}  >
