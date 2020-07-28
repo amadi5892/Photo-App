@@ -6,14 +6,19 @@
 }
 
 .container {
-  border: 1px solid black;
+  border-radius: 15px;
   width: 700px;
   display: flex;
   flex-direction: column;
+  background-color: #7C7C7C;
+}
+
+.container h1 {
+  color: black;
 }
 
 .display-img {
-  border: solid red;
+  
   height: 450px;
   display: flex;
   align-items: center;
