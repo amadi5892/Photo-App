@@ -31,3 +31,17 @@
   padding: 1px;
   border: 1px solid green;
 }
+
+.prof-pic {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.grid-block {
+  margin-top: 50px;;
+}
+
+.one {
+  margin: 20px;
+}
