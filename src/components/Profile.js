@@ -25,8 +25,8 @@ class Profile extends React.Component {
     render() {
         const {images} = this.state
         return (
-            <div>
-                <h1>amadi5892@gmail.com</h1>
+            <div className="bck-prof">
+                <h1 className="usr-nm">amadi5892@gmail.com</h1>
                 <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80" alt="" className="prof-pic"></img>
                 <div className="selection grid-block">
                             {images.map((image, index) => (
