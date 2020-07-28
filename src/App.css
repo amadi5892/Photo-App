@@ -1,3 +1,10 @@
+.App {
+  background-image: url('https://images.unsplash.com/photo-1595503411209-e80e8c46766f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .container {
   border: 1px solid black;
   width: 700px;
